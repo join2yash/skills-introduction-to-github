@@ -2,7 +2,7 @@
 	"name": "Count products by category",
 	"properties": {
 		"content": {
-			"query": "-- This is auto-generated code\nSELECT\n    category, count(*) AS productcount\nFROM\n    OPENROWSET(\n        BULK 'https://datalake356eabo.dfs.core.windows.net/files/product_data/products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n            HEADER_ROW = TRUE\n        ) AS [result]\nGROUP BY category;\n",
+			"query": "-- This is auto-generated code\nSELECT\n    category, count(*) AS productcount\nFROM\n    OPENROWSET(\n        BULK 'https://datalake356eabo.dfs.core.windows.net/files/product_data/products.csv',\n        FORMAT = 'CSV',\n        PARSER_VERSION = '2.0',\n            HEADER_ROW = TRUE\n        ) AS [result]\nGROUP BY category;",
 			"metadata": {
 				"language": "sql"
 			},
